@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    padding: 60px 0;
+    max-width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #ED213A;
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+    background: linear-gradient(to right, #932a1ea6, hsla(353, 85%, 53%, 0.418)), url(../imagenes/Mad\ Mod\ logo\ 2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin: 0 15px; 
+}
+nav > a:hover {
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+
+header .textosheader {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textosheader h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.textosheader h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.separador-logo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imgabtus {
+    width: 20%;
+}
+
+.sobre-nosotros .contenedor-txt {
+    width: 48%;
+    text-align: center; 
+}
+
+.contenedor-txt h3 {
+    margin-bottom: 15px;
+}
+
+.contenedor-txt h3 span {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 1px;
+    margin-right: 5px;
+}
+
+.contenedor-txt p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galería */
+
+.galeria-port {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.imagenport {
+    width: 200px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.imagenport:last-child {
+    margin-right: 0;
+}
+
+.imagenport > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.hover-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(0, 0, 0, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.hover-face img {
+    width: 50px;
+}
+
+.hover-face p {
+    color: #fff;
+}
+
+.imagenport:hover .hover-face {
+    transform: scale(1);
+}
+
+
+
+.galeria {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.cards img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0 50px; 
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    font-weight: bold; 
+}
+
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    header .textosheader {
+        height: auto;
+    }
+
+    .contenedor-secciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+    }
+
+    .imgabtus {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nosotros .contenedor-txt {
+        width: 100%;
+    }
+
+    .galeria-port {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .imagenport {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
